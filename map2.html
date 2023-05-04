@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style2.css"> 
+    <link rel="website icon" type="png" href="images/spaceship.png">
+</head>
+<body>
+    <div class="wrap">
+        <header>Space Invaders 2 </header>
+        <div class="game-wrapper">
+
+            <div id="timer">00:00</div>
+            <p id="score">Score: 0</p>
+            <p id="lives">Lives: 3</p>
+            <a  class="level" href="index.html" onclick="window.location.reload()"><span data-attr="LEVEL">LEVEL</span><span data-attr="1">1</span></a>
+            <div class="main"></div>
+                <div class="lose">
+                    <h1>Game Over</h1>
+                    <h2>Try Again</h2>
+                    <!-- <button class="restart" onclick="window.location.reload()">Restart</button> -->
+                    <a href="#" onclick="window.location.reload()"><span data-attr="RES">RES</span><span data-attr="TART">TART</span></a>
+                </div>
+                <div class="win">
+                    <h1>You Win</h1>
+                    <!-- <button class="restart" onclick="window.location.reload()">Restart</button> -->
+                    <a href="#" onclick="window.location.reload()"><span data-attr="RES">RES</span><span data-attr="TART">TART</span></a>
+                    <a href="map3.html" onclick="window.location.reload()"><span data-attr="NEXT">NEXT</span><span data-attr="LEVEL">LEVEL</span></a>
+                </div>
+                <div class="pause">
+                    <h1>Game Paused</h1>
+                    <h2>Press P to resume</h2>
+                    <h2>or</h2>
+                    <!-- <button class="restart" onclick="window.location.reload()">Restart</button> -->
+                    <a href="#" onclick="window.location.reload()"><span data-attr="RES">RES</span><span data-attr="TART">TART</span></a>
+                </div>
+            
+        </div>
+        <script src="map2.js"></script>
+        <footer></footer>
+    </div>
+</body>
+</html>
